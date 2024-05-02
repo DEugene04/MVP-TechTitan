@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: #f3f3f3;
+}
+
+.navbar {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.login-container {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+}
+
+.decor-log {
+  width: 60%;
+  height: 60%;
+  min-width: 500px;
+  min-height: auto;
+}
+
+.login-decoration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 60%;
+}
+
+.form {
+  width: 100%;
+  max-width: 800px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 100px;
+}
+.form-header {
+  padding-left: 20px;
+  font-family: "Prompt";
+  font-size: 30px;
+  font-weight: 2000;
+}
+
+.form-container {
+  align-items: center;
+  width: 60%;
+}
+.container {
+  max-width: 700px;
+  width: 100%;
+  height: fit-content;
+  padding: 30px;
+  margin-top: 70px;
+  border-radius: 25px;
+  z-index: 1;
+  box-shadow: 0 0 10px;
+  position: relative;
+}
+.header {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.title {
+  font-family: prompt;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.form :where(.inputbox input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #888888;
+  margin-top: 12px;
+  border-radius: 30px;
+  border-color: #cdcdcd;
+  padding-left: 15px;
+}
+.inputbox {
+  width: 100%;
+  margin-top: 20px;
+}
+.birthdate {
+  display: flex;
+  column-gap: 15px;
+}
+.genderradio {
+  margin-top: 20px;
+}
+.titlegender {
+  color: #a2a2a2;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.gendertype {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.gender label {
+  color: #d1d1d1;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #d1d1d1;
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.tnc {
+  color: #d1d1d1;
+  padding-top: 10px;
+}
+.button:hover {
+  background: rgb(93, 93, 93);
+}
+
+.form button {
+  height: 55px;
+  width: 200px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #ffa337;
+  border-radius: 30px;
+  border-style: none;
+}
