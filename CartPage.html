@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Nunito:wght@400;500;600;800&family=Orelega+One&family=Poppins:wght@400;500;600&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Prompt' rel='stylesheet'>
+    <link rel="stylesheet" href="cartstyle.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logoBox">
+                <a href="/" class="navLogo"><h1>EcoBite</h1></a>
+            </div>
+            <div class="menu">
+                <a href="/" class="home">Home</a>
+                <a href="/" class="cart">Cart</a>
+                <a href="/" class="location">Location</a>
+                <div class="profile">
+                    <a href="" class="profileName">Christine</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cartrow">
+            <div class="cart-header">
+                <h3 class="product">Product</h3>
+                <h3 class="UnitPrice">Unit Price</h3>
+                <h3 class="Quantity">Quantity</h3>
+                <h3 class="Totalprice">Total price</h3>
+                <h3 class="Action">Actions</h3>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row1">
+                <div class="productSection">
+                    <input type="checkbox" name="" id="include">
+                    <img src="images/foodpics/spaghetti.png" alt="" class="foodimage">
+                    <p class="foodname">Spaghetti Aglio Olio</p>
+                </div>
+                <div class="unitpriceSection">
+                    <p class="foodprice">Rp22.000</p>
+                </div>
+                <div class="quantitySection">
+                    <button class="minus">-</button>
+                    <input type="text" name="" id="quantityamount" value="1" maxlength="2" size="1">
+                    <button class="plus">+</button>
+                </div>
+                <div class="totalpriceSection">
+                    <p class="sumtopay">Rp22.000</p>
+                </div>
+                <div class="delete">
+                    <button class="deletebutton"><img src="/images/Delete.png" alt="" height="35px"></button>
+                </div>
+            </div>
+
+            <div class="row1">
+                <div class="productSection">
+                    <input type="checkbox" name="" id="include">
+                    <img src="images/foodpics/salad.png" alt="" class="foodimage">
+                    <p class="foodname">Salad Tuna</p>
+                </div>
+                <div class="unitpriceSection">
+                    <p class="foodprice">Rp16.000</p>
+                </div>
+                <div class="quantitySection">
+                    <button class="minus">-</button>
+                    <input type="text" name="" id="quantityamount" value="3" maxlength="2" size="1">
+                    <button class="plus">+</button>
+                </div>
+                <div class="totalpriceSection">
+                    <p class="sumtopay">Rp48.000</p>
+                </div>
+                <div class="delete">
+                    <button class="deletebutton"><img src="/images/Delete.png" alt="" height="35px"></button>
+                </div>
+            </div>  
+
+            <div class="row1">
+                <div class="productSection">
+                    <input type="checkbox" name="" id="include">
+                    <img src="images/foodpics/penne.png" alt="" class="foodimage">
+                    <p class="foodname">Penne Bolognaise</p>
+                </div>
+                <div class="unitpriceSection">
+                    <p class="foodprice">Rp22.000</p>
+                </div>
+                <div class="quantitySection">
+                    <button class="minus">-</button>
+                    <input type="text" name="" id="quantityamount" value="1" maxlength="2" size="1">
+                    <button class="plus">+</button>
+                </div>
+                <div class="totalpriceSection">
+                    <p class="sumtopay">Rp22.000</p>
+                </div>
+                <div class="delete">
+                    <button class="deletebutton"><img src="/images/Delete.png" alt="" height="35px"></button>
+                </div>
+            </div>
+
+            <div class="row1">
+                <div class="productSection">
+                    <input type="checkbox" name="" id="include">
+                    <img src="images/foodpics/fries.png" alt="" class="foodimage">
+                    <p class="foodname">Spaghetti Aglio Olio</p>
+                </div>
+                <div class="unitpriceSection">
+                    <p class="foodprice">Rp15.000</p>
+                </div>
+                <div class="quantitySection">
+                    <button class="minus">-</button>
+                    <input type="text" name="" id="quantityamount" value="1" maxlength="2" size="1">
+                    <button class="plus">+</button>
+                </div>
+                <div class="totalpriceSection">
+                    <p class="sumtopay">Rp15.000</p>
+                </div>
+                <div class="delete">
+                    <button class="deletebutton"><img src="/images/Delete.png" alt="" height="35px"></button>
+                </div>
+            </div> 
+
+            <div class="row1">
+                <div class="productSection">
+                    <input type="checkbox" name="" id="include">
+                    <img src="images/foodpics/popcorn.png" alt="" class="foodimage">
+                    <p class="foodname">Duo Popcorn</p>
+                </div>
+                <div class="unitpriceSection">
+                    <p class="foodprice">Rp26.000</p>
+                </div>
+                <div class="quantitySection">
+                    <button class="minus">-</button>
+                    <input type="text" name="" id="quantityamount" value="1" maxlength="2" size="1">
+                    <button class="plus">+</button>
+                </div>
+                <div class="totalpriceSection">
+                    <p class="sumtopay">Rp26.000</p>
+                </div>
+                <div class="delete">
+                    <button class="deletebutton"><img src="/images/Delete.png" alt="" height="35px"></button>
+                </div>
+            </div>     
+        </div>
+    </div>
+
+    <div class="checkout">
+        <div class="selectall">
+            <input type="checkbox" name="" id="selectall">
+            <label for="selectall">Select All (1)</label>
+        </div>
+        <div class="finalprice">
+            <p style="margin-right: 10px;">Total (1 item): </p>
+            <p> Rp22.000</p>
+        </div>
+        <div class="checkoutbutton-style">
+            <button class="checkoutbutton">Checkout</button>
+        </div> 
+    </div>
+</body>
+</html>
