@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Nunito:wght@400;500;600;800&family=Orelega+One&family=Poppins:wght@400;500;600&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Prompt' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logoBox">
+                <a href="/" class="navLogo"><h1>EcoBite</h1></a>
+            </div>
+            <div class="menu">
+                <a href="/" class="home">Home</a>
+                <a href="/" class="cart">Cart</a>
+                <a href="/" class="location">Location</a>
+                <div class="profile">
+                    <a href="" class="profileName">Christine</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="checkout-Header">Checkout</p>
+    </div>
+    <div class="delivery-address-container">
+        <div class="delivery-header">
+            <img src="images/Location.png" alt="" height="20px" width="20px" id="img-deliv">
+            &nbsp;&nbsp;&nbsp;
+            <p>Delivery Address</p>
+        </div>
+        <div class="deliv-content-container">
+            <div class="name-number">
+                <p>Christine</p>
+                <p>(+62) 819-9208-1234</p>
+            </div>
+            <div class="custaddress">
+                <p>Kost Mandala 3, Jalan Mandala III No. 3, Mandala, Kebon Jeruk (Sebelah Binus Anggrek), 
+                    KOTA JAKARTA BARAT - KEBON JERUK, DKI JAKARTA, ID 11530</p>
+            </div>
+            <div class="change-address">
+                <a href="">Change</a>
+            </div>
+        </div>
+    </div>
+    <div class="row1">
+        <div class="productSection">
+            <img src="images/foodpics/penne.png" alt="" class="foodimage">
+            <p class="foodname">Penne Bolognaise</p>
+        </div>
+        <div class="unitpriceSection">
+            <p class="foodprice">Rp22.000</p>
+        </div>
+        <div class="quantitySection">
+            <button class="minus">-</button>
+            <input type="text" name="" id="quantityamount" value="1" maxlength="2" size="1">
+            <button class="plus">+</button>
+        </div>
+        <div class="totalpriceSection">
+            <p class="sumtopay">Rp22.000</p>
+        </div>
+        <div class="delete">
+            <button class="deletebutton"><img src="images/Delete.png" alt="" height="35px" ></button>
+        </div>
+    </div>
+    <div class="row1">
+        <div class="messageSection">
+            <p>Message:</p> &nbsp;&nbsp;
+            <div class="message-box">
+                <input type="text" name="message" placeholder="(Optional) Leave a message">
+            </div>
+        </div>
+        <div class="unitshippingsection">
+            <p class="foodprice">Shipping by:</p>
+        </div>
+        <div class="delivery-mode">
+            <p>Reguler</p>
+            <div class="prediction">Receive by 8-12</div>
+        </div>
+        <div class="delivery-change">
+            <a href="">Change</a>
+        </div>
+        <div class="deliv-charge"> 
+            Rp.9.000
+        </div>
+    </div>
+    <div class="voucher-container">
+        <div class="shippingvoucher">
+            <img src="images/Voucher.png" alt="" width="30px">
+            <p>Shipping Voucher</p>
+        </div>
+        <div class="deliv-charge"> 
+            Rp.9.000
+        </div>
+    </div>
+    <div class="payment-summary">
+        <div class="payment-method">
+            <p>Payment Method: </p>
+            &nbsp;&nbsp;&nbsp;
+            <div class="radio-toolbar">
+                <input type="radio" id="radio1" name="radios" value="all" checked>
+                <label for="radio1">Debit</label>
+              
+                <input type="radio" id="radio2" name="radios" value="false">
+                <label for="radio2">Credit</label>
+              
+                <input type="radio" id="radio3" name="radios" value="true">
+                <label for="radio3">COD</label>
+            </div>
+        </div>
+        <div class="payment-finalsum">
+            <table>
+                <tr>
+                  <th>Shipping</th>
+                  <td>Rp 9.000</td>
+                </tr>
+                <tr>
+                  <th>Shipping Discount</th>
+                  <td>Rp 9.000</td>
+                </tr>
+                <tr>
+                  <th>Merchandise Subtotal</th>
+                  <td>Rp 22.000</td>
+                </tr>
+                <tr>
+                  <th>Total Payment</th>
+                  <td>Rp 22.000</td>
+                </tr>
+              </table>
+        </div>
+    </div>
+
+    <div class="checkout">
+        <div class="selectall">
+           <a href="">See Our Help Center</a> 
+        </div>
+        <div class="checkoutbutton-style">
+            <button class="checkoutbutton">Complete Payment</button>
+        </div> 
+    </div>
+    
+</body>
+</html>

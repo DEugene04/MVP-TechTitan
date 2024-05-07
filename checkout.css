@@ -135,6 +135,8 @@
   height: 100px;
   align-items: center;
   background-color: #fff4e7;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .productSection {
   display: flex;
@@ -176,9 +178,8 @@
 }
 
 .foodimage {
-  width: 100px;
+  width: 80px;
   height: 80px;
-  padding-left: 20px;
 }
 
 .deletebutton {
@@ -205,7 +206,7 @@
 .checkout {
   display: flex;
   align-items: center;
-  padding: 10px 50px 20px 90px;
+  padding: 10px 50px 20px 50px;
 }
 
 .selectall {
@@ -231,4 +232,186 @@
   background: #ec5d00;
   border-radius: 10px;
   border-style: none;
+}
+
+.checkout-Header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "roboto";
+  font-size: 35px;
+  font-weight: 600;
+  padding: 40px 30px 20px 50px;
+  color: #603d87;
+}
+
+.delivery-address-container {
+  font-family: "roboto";
+  padding: 25px 10px 20px 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-header {
+  display: flex;
+}
+
+.deliv-content-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.name-number {
+  font-family: "roboto";
+  font-weight: 500;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.custaddress {
+  flex: 4;
+}
+
+.change-address {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1%;
+}
+
+.food-summary {
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 10px 50px 10px 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 100%;
+  height: 100px;
+  background-color: #fff4e7;
+}
+
+.message-box input[type="text"] {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.delivery-mode {
+  font-weight: 500;
+}
+
+.prediction {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.messageSection {
+  display: flex;
+  align-items: center;
+  flex: 3;
+}
+
+.unitshippingsection {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  padding-left: 200px;
+}
+
+.delivery-mode {
+  flex: 2;
+}
+
+.delivery-change {
+  flex: 2;
+  color: #35ad9e;
+  padding-left: 30px;
+  justify-content: center;
+}
+
+.deliv-charge {
+  flex: 1;
+}
+
+.voucher-container {
+  display: flex;
+  padding-left: 40px;
+  background-color: #fff4e7;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 5px;
+  align-items: center;
+  padding-left: 47%;
+}
+
+.shippingvoucher{
+  display: flex;
+  padding-left: 40px;
+  background-color: #fff4e7;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  align-items: center;
+  flex: 4;
+
+}
+.deliv-charge{
+  flex: 1;
+}
+.payment-summary{
+  display: flex;
+  align-items: center;
+  padding: 10px 50px 10px 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 5px;
+  height: 250px;
+  background-color: #fff4e7;
+  justify-content: space-between;
+}
+
+.payment-method{
+  display: flex;
+  align-items: center;
+}
+.radio-toolbar input[type="radio"] {
+  display: none;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 4px 11px;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+  background-color: #bbb;
+}
+
+.payment-finalsum{
+  padding-right: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
