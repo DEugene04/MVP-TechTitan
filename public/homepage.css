@@ -1,0 +1,178 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Prompt", sans-serif;
+  background: #F3F3F3;
+}
+
+/* NavBar CSS */
+.navBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoEcobite{
+  margin-left: 3vw;
+}
+
+.logoEcobite img{
+  width: 10vw;
+  height: 23vh;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8vw;
+  margin-right: 3vw;
+}
+
+/* Hover CSS untuk navlinks */
+.navLinks a:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.navLinks button{
+  background-color: #FFA337;
+  color: white;
+  padding: .3vw 2vw;
+  outline: none;
+  border: none;
+  border-radius: 2vw;
+  font-size: 1.8vw;
+  box-shadow: -3px 5px rgba(0, 0, 0, 0.336);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover untuk button */
+.navLinks button:hover{
+  transform: translate(-3px, 5px);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+/* Landing Page CSS */
+.landingPageContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landingPageText{
+  margin-left: 10vw;
+}
+
+#EveryBite, #Counts{
+  font-size: 4.44vw;
+}
+
+#Counts{
+  color: #FFA337;
+}
+
+.landingPageImage img{
+  width: 40vw;
+  height: 38vw;
+}
+
+/* Menu Navbar CSS */
+.menuNavBarContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 3vw;
+}
+
+.categories{
+  gap: 1vw;
+}
+
+.categories:hover{
+  cursor: pointer;
+}
+
+#Food{
+  opacity: 1;
+}
+
+#Drinks{
+  opacity: 0.5;
+}
+
+.categories, .searchContainer{
+  display: flex;
+}
+
+.searchBar{
+  background-color: white;
+  width: 20vw;
+  height: 3vw;
+  border: 1px solid rgb(126, 126, 126);
+  border-radius: 3vw;
+}
+
+/* Main Course CSS and Side Course CSS*/
+.mainCourseContainer, .SideCourseContainer{
+  margin-left: 3vw;
+  margin-top: 2vw;
+}
+
+.image img{
+  width: 12vw;
+  height: 11vw;
+}
+
+.FoodCourseMenu, .DrinkCourseMenu, .SideCourseMenu{
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  gap: 2vw;
+}
+
+.mainCourseCard, .sideCourseCard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 2vw;
+  width: calc(33.33% - 2vw);
+  padding: 2vw;
+  margin-top: 1vw;
+}
+
+.foodTitle, .drinkTitle{
+  font-size: 1.5vw;
+}
+
+.originalPrice{
+  opacity: 0.7;
+}
+
+.discountPrice{
+  color: #FF6737;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: end;
+  margin-top: 1vw;
+}
+
+.addButton{
+  background-color: #FF6737;
+  padding: .3vw 2.5vw;
+  outline: none;
+  border: none;
+  border-radius: 2vw;
+  font-size: 1.5vw;
+  color: white;
+}

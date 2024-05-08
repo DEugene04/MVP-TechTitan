@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    margin: 2vw 2vw 0vw 2vw;
+    position: relative;
+    height: 100vh;
+}
+
+/* popUp CSS */
+.popUpContainer{
+    width: fit-content;
+    background-color: #F3F3F3;
+    padding: 3vw 6vw 1.5vw 6vw;
+    border-radius: 4vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.popUpTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentContainer label{
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    margin-top: .6vw;
+}
+
+/* untuk manipulate the input of jenis makanan and use dropdown */
+#JenisFoodMain{
+    display: none;
+}
+
+/* utk hide input foto biar bs manipulasi pake button upload */
+
+#FotoFoodMain{
+    /* display: none; */
+}
+
+#FotoContainer label{
+    width: fit-content;
+}
+
+.uploadBtn{
+    background-color: #0094FF;
+    color: white;
+    padding: .5vw 2.5vw;
+    outline: none;
+    border: none;
+    border-radius: 2vw;
+    margin-bottom: 1vw;
+    margin-top: .3vw;
+}
+
+.uploadBtn:hover{
+    cursor: pointer;
+}
+
+#FotoFoodMain{
+    display: none;
+}
+
+.contentContainer input, #dropDown{
+    background-color: white;
+    height: 2vw;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3vw;
+    margin-top: .3vw;
+    padding: .2vw 1vw;
+}
+
+/* CSS for quantity */
+
+.quantityContent{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.minusBtn, .plusBtn{
+    background-color: transparent;
+    border: 2px solid #FF6737;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF6737;
+    font-size: 1.5vw;
+    padding: 0;
+}
+
+/* hide input for quantity */
+#QuantityFoodMain{
+    display: none;
+}
+
+/* CSS for save button */
+#SaveContainer{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.saveBtn{
+    width: fit-content;
+    color: white;
+    background-color: #FF6737;
+    padding: .4vw 2vw;
+    outline: none;
+    border: none;
+    border-radius: 2vw;
+}
+
+/* CSS for error message in PopUp */
+.error-message{
+    color: #FF6737;
+}
