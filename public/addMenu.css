@@ -10,6 +10,15 @@
     height: 100vh;
 }
 
+/* title CSS */
+.fa-arrow-left{
+    font-size: 1.3vw;
+}
+
+a{
+    color: black;
+}
+
 /* Table CSS */
 table{
     width: 100%;
@@ -28,14 +37,20 @@ th, td{
     padding: .5vw;
 }
 
-.Edit{
+.editBtn{
     background-color: #0094FF;
     color: white;
+    padding: .2vw 1vw;
+    outline: none;
+    border: none;
 }
 
-.Delete{
+.deleteBtn{
     background-color: #E70037;
     color: white;
+    padding: .2vw 1vw;
+    outline: none;
+    border: none;
 }
 
 /* Add new Menu CSS */
@@ -44,14 +59,19 @@ th, td{
     justify-content: end;
     margin-top: 2vw;
 }
-.addMenuContainer button{
+#addMenuBtn{
     width: fit-content;
-    background-color: #FFA337;
+    background-color: transparent;
     padding: 1vw 2vw;
     border-radius: 3vw;
     outline: none;
-    border: none;
-    color: white;
+    border: 2px solid #FFA337;
+    color: #FFA337;
+}
+#addMenuBtn:hover{
+    cursor: pointer;
+    background-color: #FFA337;
+    color: whitesmoke;
 }
 
 /* popUp CSS */
@@ -65,6 +85,7 @@ th, td{
     top: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    z-index: 3;
 }
 
 .popUpTitle{
@@ -171,4 +192,17 @@ th, td{
 /* CSS for error message in PopUp */
 .error-message{
     color: #FF6737;
+}
+
+/* Css for the darkOverlay */
+.darkOverlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
 }

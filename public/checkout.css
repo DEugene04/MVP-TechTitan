@@ -1,0 +1,466 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "prompt";
+}
+
+.body {
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+.navbar {
+  z-index: 10;
+  color: rgb(220, 220, 220);
+  width: 100%;
+  height: 120px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.navLogo {
+  font-family: "prompt";
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 41px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 50px 50px 20px 50px;
+  height: 100%;
+}
+
+.logoBox {
+  flex: 1;
+  justify-content: start;
+}
+
+.menu {
+  font-family: "prompt", sans-serif;
+  font-size: 23px;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+.home {
+  color: black;
+  padding-right: 32px;
+  text-decoration: none;
+}
+.cart {
+  color: black;
+  font-weight: bold;
+  padding-right: 32px;
+  text-decoration: none;
+}
+.location {
+  color: black;
+  padding-right: 32px;
+  text-decoration: none;
+}
+
+.profileName {
+  color: rgb(255, 255, 255);
+  text-shadow: black;
+  text-decoration: none;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 36px;
+  width: 150px;
+  background-color: #ffa337;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cart-container {
+  width: 100%;
+  padding: 10px 50px 20px 50px;
+}
+
+.cartrow {
+  background-color: #ffa337;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.cart-header {
+  font-family: "prompt";
+  font-size: 15px;
+  padding-left: 40px;
+  padding-right: 25px;
+  display: flex;
+  width: 100%;
+}
+
+.product {
+  flex: 4;
+  font-weight: 400;
+}
+.UnitPrice {
+  flex: 2;
+  padding-left: 20px;
+  font-weight: 400;
+}
+.Quantity {
+  flex: 2;
+  padding-left: 30px;
+  font-weight: 400;
+}
+.Totalprice {
+  flex: 2;
+  font-weight: 400;
+}
+.Action {
+  flex: 1;
+  font-weight: 400;
+}
+.row1 {
+  display: flex;
+  margin-top: 8px;
+  padding-left: 40px;
+  height: 100px;
+  align-items: center;
+  background-color: #fff4e7;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.productSection {
+  display: flex;
+  align-items: center;
+  flex: 4;
+}
+.unitpriceSection {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
+.quantitySection {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+.quantityamount {
+  width: 20px;
+}
+
+.totalpriceSection {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  font-weight: 600;
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.foodname {
+  padding-left: 15px;
+  font-family: "prompt";
+  font-weight: 200px;
+}
+
+.foodimage {
+  width: 80px;
+  height: 80px;
+}
+
+.deletebutton {
+  border: none;
+  background-color: transparent;
+  &:hover {
+    filter: hue-rotate(90deg);
+    opacity: 0.7;
+  }
+}
+
+#quantityamount {
+  width: 40px;
+  height: 20px;
+  padding-left: 10px;
+}
+
+.minus,
+.plus {
+  width: 30px;
+  height: 20px;
+}
+
+.checkout {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px 20px 50px;
+}
+
+.selectall {
+  flex: 3;
+}
+
+.finalprice {
+  flex: 1;
+  display: flex;
+}
+
+.checkoutbutton {
+  border: none;
+  background-color: transparent;
+  margin-left: 0px;
+  height: 45px;
+  width: 200px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #ec5d00;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.checkout-Header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "roboto";
+  font-size: 35px;
+  font-weight: 600;
+  padding: 40px 30px 20px 50px;
+  color: #603d87;
+}
+
+.delivery-address-container {
+  font-family: "roboto";
+  padding: 25px 10px 20px 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-header {
+  display: flex;
+}
+
+.deliv-content-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.name-number {
+  font-family: "roboto";
+  font-weight: 500;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.custaddress {
+  flex: 4;
+}
+
+.change-address {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1%;
+}
+
+.food-summary {
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 10px 50px 10px 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 100%;
+  height: 100px;
+  background-color: #fff4e7;
+}
+
+.message-box input[type="text"] {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.delivery-mode {
+  font-weight: 500;
+}
+
+.prediction {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.messageSection {
+  display: flex;
+  align-items: center;
+  flex: 3;
+}
+
+.unitshippingsection {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  padding-left: 200px;
+}
+
+.delivery-mode {
+  flex: 2;
+}
+
+.delivery-change {
+  flex: 2;
+  color: #35ad9e;
+  padding-left: 30px;
+  justify-content: center;
+}
+
+.deliv-charge {
+  flex: 1;
+}
+
+.voucher-container {
+  display: flex;
+  padding-left: 40px;
+  background-color: #fff4e7;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 5px;
+  align-items: center;
+  padding-left: 47%;
+}
+
+.shippingvoucher{
+  display: flex;
+  padding-left: 40px;
+  background-color: #fff4e7;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  align-items: center;
+  flex: 4;
+
+}
+.deliv-charge{
+  flex: 1;
+}
+.payment-summary{
+  display: flex;
+  align-items: center;
+  padding: 10px 50px 10px 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 5px;
+  height: 250px;
+  background-color: #fff4e7;
+  justify-content: space-between;
+}
+
+.payment-method{
+  display: flex;
+  align-items: center;
+}
+.radio-toolbar input[type="radio"] {
+  display: none;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 4px 11px;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+  background-color: #bbb;
+}
+
+.payment-finalsum{
+  padding-right: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* darkoverlay CSS */
+.darkOverlay{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* popUp CSS */
+.popUpContainer{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    background-color: #ffe5c8;
+    padding: 2vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.fa-check{
+    font-size: 10vw;
+    color: #ec5d00;
+}
+
+.popUpContainer button{
+    padding: .5vw 2vw;
+    border-radius: 2vw;
+    outline: none;
+    border: none;
+    background-color: #ec5d00;
+    color: white;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.popUpContainer button:hover{
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}

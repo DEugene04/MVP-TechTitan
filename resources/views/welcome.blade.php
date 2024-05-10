@@ -6,7 +6,7 @@
   <title>Homepage</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="/welcome.css">
 
   <!-- Font Prompt -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,14 +20,22 @@
       <!-- Navbar HTML -->
       <nav class="navBar">
           <div class="logoEcobite">
-              <img src="/assets/Logo Ecobite.png" alt="">
+              <img src="./images/Logo.png" alt="">
           </div>
+
+          @guest
           <div class="navLinks">
-              <a href=""><b>Home</b></a>
-              <a href="">Cart</a>
-              <a href="">Location</a>
-              <a href=""><button>Login</button></a>
-          </div>
+            <a href="/"><b>Home</b></a>
+            <a href="{{ route('register') }}">Register</a>
+            <a href="{{ route('login') }}"><button>Login</button></a>
+            </div> 
+        @else 
+            <div class="navLinks">
+                <a href="/"><b>Home</b></a>
+                <a href="/cartPage">Cart[{{ $totalQuantity }}]</a>
+                <a href="">Log Out</a>
+            </div>   
+          @endguest
       </nav>
 
       <!-- Landing page HTML -->
@@ -47,13 +55,6 @@
               <h1 id="Food">Food</h1>
               <h1 id="Drinks">Drinks</h1>
           </div>
-          <div class="searchContainer">
-              <img src="/assets/Filter icon.png" alt="">
-              <form class="searchBar" action="{{ route('search') }}" method="GET">
-                <input type="text" name="query" placeholder="Type Here....">
-                <button type="submit">Search</button>
-              </form>
-          </div>
       </div>
 
       <!-- Main course HTML -->
@@ -66,15 +67,19 @@
               @forelse ($foodMenu as $m)
                 <div class="mainCourseCard">
                     <div class="image">
-                        <img src="storage/{{ $m->FotoFoodMain }}" alt="{{ $m->FotoFoodMain }}">
+                        <img src="{{ asset('storage/' .$m->FotoFoodMain) }}" alt="{{ $m->FotoFoodMain }}">
                     </div>
                     <div class="keterangan">
                         <h1 class="foodTitle">{{ $m->NamaFoodMain }}</h1>
-                        <h2 class="originalPrice"><del>{{ $m->HargaOriFoodMain }}</del></h2>
-                        <h2 class="discountPrice">Rp. {{ ($m->HargaOriFoodMain)/2 }}</h2>
-                        <div class="buttonContainer">
-                            <button class="addButton">Add</button>
-                        </div>
+                        <h2 class="originalPrice"><del>Rp. {{ number_format($m->HargaOriFoodMain) }}</del></h2>
+                        <h2 class="discountPrice">Rp. {{ number_format($m->HargaOriFoodMain/2) }}</h2>
+                        <form action="{{ url('addcart', $m->id) }}" method="POST">
+                            @csrf
+                            <div class="buttonContainer">
+                                <input type="number" value="1" min="1" class="form-control" name="cartQuantity" id="cartQuantity">
+                                <input type="submit" value="Add To Cart" class="addButton">
+                            </div>
+                        </form>
                     </div>
                 </div>
               @empty
@@ -94,9 +99,13 @@
                         <h1 class="drinkTitle">{{ $d->NamaFoodMain }}</h1>
                         <h2 class="originalPrice"><del>{{ $d->HargaOriFoodMain }}</del></h2>
                         <h2 class="discountPrice">Rp. {{ ($d->HargaOriFoodMain)/2 }}</h2>
-                        <div class="buttonContainer">
-                            <button class="addButton">Add</button>
-                        </div>
+                        <form action="{{ url('addcart', $m->id) }}" method="POST">
+                            @csrf
+                            <div class="buttonContainer">
+                                <input type="number" value="1" min="1" class="form-control" name="cartQuantity" id="cartQuantity">
+                                <input type="submit" value="Add To Cart" class="addButton">
+                            </div>
+                        </form>
                     </div>
                 </div>
             @empty
@@ -119,10 +128,14 @@
                     <div class="keterangan">
                         <h1 class="foodTitle">{{ $s->NamaFoodMain }}</h1>
                         <h2 class="originalPrice"><del>{{ $s->HargaOriFoodMain }}</del></h2>
-                        <h2 class="discountPrice">Rp. {{ ($d->HargaOriFoodMain)/2 }}</h2>
-                        <div class="buttonContainer">
-                            <button class="addButton">Add</button>
-                        </div>
+                        <h2 class="discountPrice">Rp. {{ ($s->HargaOriFoodMain)/2 }}</h2>
+                        <form action="{{ url('addcart', $m->id) }}" method="POST">
+                            @csrf
+                            <div class="buttonContainer">
+                                <input type="number" value="1" min="1" class="form-control" name="cartQuantity" id="cartQuantity">
+                                <input type="submit" value="Add To Cart" class="addButton">
+                            </div>
+                        </form>
                     </div>
                 </div>
             @empty
@@ -131,8 +144,7 @@
           </div>
       </div>
       
-
-  <script src="homepage.js"></script>
+  <script src="/welcome.js"></script>
   </div>
   
 </body>

@@ -127,10 +127,10 @@ a{
 
 .image img{
   width: 12vw;
-  height: 11vw;
+  margin-right: 1vw;
 }
 
-.FoodCourseMenu, .DrinkCourseMenu, .SideCourseMenu{
+.FoodCourseMenu, .DrinkCourseMenu, .sideCourseMenu{
   display: flex;
   flex-wrap: wrap;
   opacity: 1;
@@ -165,14 +165,19 @@ a{
   display: flex;
   justify-content: end;
   margin-top: 1vw;
+  gap: .5vw;
+}
+
+#cartQuantity{
+    width: 4vw;
 }
 
 .addButton{
   background-color: #FF6737;
-  padding: .3vw 2.5vw;
+  padding: 1vw 2vw;
   outline: none;
   border: none;
   border-radius: 2vw;
-  font-size: 1.5vw;
+  font-size: 1vw;
   color: white;
 }

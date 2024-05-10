@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
 
+  {{-- font awesome link --}}
+  <script src="https://kit.fontawesome.com/c07884273f.js" crossorigin="anonymous"></script>
+
   <!-- Connect CSS -->
-  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="/addMenu.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -14,6 +17,7 @@
             <h1>Admin Dashboard</h1>
         </div>
         <hr>
+        <a href="/"><h2><i class="fa-solid fa-arrow-left"></i>Home</h2></a>
 
       <!-- Table HTML -->
         <div class="tableContainer">
@@ -144,8 +148,11 @@
             </div>
         </form>
 
+        {{-- darkOverlay untuk pas popUp muncul --}}
+        <div class="darkOverlay"></div>
+
         <!-- link to javascript -->
-        <script src="admin.js"></script>
+        <script src="/addMenu.js"></script>
     </div>
 </body>
 </html>

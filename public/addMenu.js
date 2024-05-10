@@ -3,14 +3,17 @@ let uploadBtn = document.querySelector(".uploadBtn")
 let inputFoto = document.getElementById("FotoFoodMain")
 let addMenu = document.getElementById("addMenuBtn")
 let popUp = document.getElementById("popUpContainer")
+let darkOverlay = document.querySelector(".darkOverlay")
 
-uploadBtn.addEventListener('click', function(e){
-    e.preventDefault()
-    inputFoto.click()
+
+uploadBtn.addEventListener('click', function(e){    
+    e.preventDefault() // Disable the page refresh when upload btn was clicked
+    inputFoto.click() // supaya user bisa masukin file mrk dri library ke laptop
 })
 
 addMenu.addEventListener("click", function(){
-    popUp.style.display = "block"
+    popUp.style.display = "block" // Show the pop up
+    darkOverlay.style.display = "block"
 })
 
 popUp.addEventListener('click', function(event){
@@ -22,6 +25,7 @@ window.addEventListener('click', function(e){
     // Allows user to exit and close the popUp easily when clicking outside the popUp Box
     if (e.target !== popUp && e.target !== addMenu) {
         popUp.style.display = 'none';
+        darkOverlay.style.display = "none"
     }
 })
 
